@@ -19,6 +19,11 @@ header .logo {
   width: 100px !important;
   height: 100px !important;
 }
+.logo{
+  animation: logo 30s infinite linear;
+transform-origin: center;
+transform-box: fill-box;
+}
 a {
   display: block;
   padding: 8px;
@@ -113,6 +118,9 @@ li a:hover {
 /* Middle column */
 .column.middle {
   width: 50%;
+}
+p{
+  font-size: 32px;
 }
 
 @media screen and (max-width: 520px) {
@@ -235,6 +243,17 @@ li a:hover {
 .column.side, .column.middle {
   width: 100%;
 }
+p{
+  font-size: 16px;
+}
 }
 
+@keyframes logo{
+  from{
+    transform: rotateZ(0deg);
+        }
+        to{
+            transform: rotateZ(360deg);
+        }
+}
 
