@@ -50,14 +50,15 @@ header {
   display: flex;
 }
 header .logo {
-  width: 100px !important;
-  height: 100px !important;
+  width: 150px !important;
+  height: 150px !important;
 }
 .logo {
   animation: logo 30s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
 }
+
 a {
   display: block;
   padding: 8px;
@@ -133,6 +134,19 @@ li a:hover {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+}
+
+.zoom {
+  padding: 50px;
+  
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); 
 }
 
 .card {
@@ -226,6 +240,7 @@ li a:hover {
   h2 {
     font-size: 32px;
     font-family: 'Abel', sans-serif;
+    text-align: center;
   }
   h2.about {
     font-size: 32px;
@@ -249,6 +264,11 @@ li a:hover {
     font-size: 15px;
     color: #fff;
     font-family: 'Inter', sans-serif;
+  }
+  .zoom {display: none;}
+  header .logo {
+    width: 100px !important;
+    height: 100px !important;
   }
 
   .hamburger {
