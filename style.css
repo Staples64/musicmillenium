@@ -30,6 +30,11 @@ p.album_info {
   font-size: 20px;
   font-family: 'Inter', sans-serif;
 }
+p.hours {
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
 p.album_week {
   font-size: 20px;
   color: #fff;
@@ -89,7 +94,7 @@ a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.button li a:hover {
   background-color: #111;
 }
 
@@ -263,6 +268,15 @@ li a:hover {
   p.album_week {
     font-size: 15px;
     color: #fff;
+    font-family: 'Inter', sans-serif;
+  }
+  p.hours {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+  }
+  p.directions {
+    font-size: 20px;
     font-family: 'Inter', sans-serif;
   }
   .zoom {display: none;}
